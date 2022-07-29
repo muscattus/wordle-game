@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <script src="https://kit.fontawesome.com/178e5397f7.js" crossorigin="anonymous"></script>
+    <title>Wordle</title>
+</head>
+<body>
+    <main class="wrapper" id="wrapper">
+        <header class="header">
+            <div></div>
+            <div>Let's play Worlde!</div>
+            <div class="action-buttons">
+                <i class="fa-solid fa-info" onClick=""></i>
+                <i class="fa-solid fa-chart-simple" onClick="showResultsAndStats(false)"></i>
+                <i class="fa-solid fa-play" onClick="newGameModal()"></i>
+            </div>
+        </header>
+        <div class="alert-wrapper">
+            <div id="alert" class="alert"><p></p></div>
+        </div>
+        <div class="board">
+            <div class="word">
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+            </div>
+            <div class="word">
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+            </div>
+            <div class="word">
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+            </div>
+            <div class="word">
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+            </div>
+            <div class="word">
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+            </div>
+            <div class="word">
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+                <div class="word-letter"></div>
+            </div>
+        </div>
+    
+    
+        <div class="keyboard">
+            <div class="keyboard-row">
+                <button data-key="q" class="letter-button">Q</button>
+                <button data-key="w" class="letter-button">W</button>
+                <button data-key="e" class="letter-button">E</button>
+                <button data-key="r" class="letter-button">R</button>
+                <button data-key="t" class="letter-button">T</button>
+                <button data-key="y" class="letter-button">Y</button>
+                <button data-key="u" class="letter-button">U</button>
+                <button data-key="i" class="letter-button">I</button>
+                <button data-key="o" class="letter-button">O</button>
+                <button data-key="p" class="letter-button">P</button>
+            </div>
+            <div class="keyboard-row">
+                <div class="placeholder"></div>
+                <button data-key="a" class="letter-button">A</button>
+                <button data-key="s" class="letter-button">S</button>
+                <button data-key="d" class="letter-button">D</button>
+                <button data-key="f" class="letter-button">F</button>
+                <button data-key="g" class="letter-button">G</button>
+                <button data-key="h" class="letter-button">H</button>
+                <button data-key="j" class="letter-button">J</button>
+                <button data-key="k" class="letter-button">K</button>
+                <button data-key="l" class="letter-button">L</button>
+                <div class="placeholder"></div>
+            </div>
+            <div class="keyboard-row">
+                <button data-key="13" class="control letter-button">ENTER</button>
+                <button data-key="z" class="letter-button">Z</butto08>
+                <button data-key="x" class="letter-button">X</button>
+                <button data-key="c" class="letter-button">C</button>
+                <button data-key="r" class="letter-button">V</button>
+                <button data-key="b" class="letter-button">B</button>
+                <button data-key="n" class="letter-button">N</button>
+                <button data-key="m" class="letter-button">M</button>
+                <button data-key="08" class="control letter-button">
+                    <svg><path fill="#000000" d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </main>   
+    <script src="dict.js"></script>
+    <script src="constants.js"></script>
+    <script src="./modals/game-over.js"></script>
+    <script src="./modals/mode-selection.js"></script>
+    <script src="./modals/word-input.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
